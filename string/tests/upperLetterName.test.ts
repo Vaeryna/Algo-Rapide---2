@@ -6,7 +6,7 @@ describe("returns string with salutation and name with first letter in upper cas
         expect(UpperLetterName("jean pierre")).toBe("Bonjour Jean Pierre");
     });
 
-    it("The name has tiret in the name", () => {
+    it("The name has dash in the name", () => {
         expect(UpperLetterName("jean-pierre")).toBe("Bonjour Jean-Pierre");
     });
 

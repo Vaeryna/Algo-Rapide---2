@@ -19,7 +19,7 @@ describe("returns string with words in the reverse order", () => {
         expect(reverseWords("je   mange   une   pomme")).toBe("pomme une mange je");
     })
 
-    it("the sentence has ponctuation", () => {
+    it("the sentence has punctuation", () => {
         expect(reverseWords("je mange une pomme !")).toBe("! pomme une mange je");
     })
 it("the sentence has numbers", () => {

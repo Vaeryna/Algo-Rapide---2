@@ -6,7 +6,7 @@ describe("returns string with the name initials", () => {
         expect(extractInitials("jean smith")).toBe("JS");
     });
 
-    it("The name has tiret", () => {
+    it("The name has dash", () => {
         expect(extractInitials("jean-pierre pernault")).toBe("JPP");
     });
 

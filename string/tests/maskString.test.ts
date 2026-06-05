@@ -6,7 +6,7 @@ describe("returns string with number cards masked except the N last", () => {
         expect(maskString("0000111122223333", 4)).toBe("************3333");
     });
 
-    it("The card number with 3 last numbers unmasked and tiret between numbers", () => {
+    it("The card number with 3 last numbers unmasked and dash between numbers", () => {
         expect(maskString("0000-1111-2222-3333", 3)).toBe("****-****-****-*333");
     });
 
@@ -14,7 +14,7 @@ describe("returns string with number cards masked except the N last", () => {
         expect(maskString("0000.1111.2222.3333", 4)).toBe("****.****.****.3333")
     })
 
-    it("The card number with 0 last numbers unmasked and tiret between numbers", () => {
+    it("The card number with 0 last numbers unmasked and dash between numbers", () => {
         expect(maskString("0000-1111-2222-3333", 0)).toBe("****-****-****-****");
     })
 
