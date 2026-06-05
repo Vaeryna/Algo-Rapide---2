@@ -17,6 +17,3 @@ export function removeDuplicates(value: string): string {
     }
     return `Message normalisé: ${cleanMessage}`
 }
-
-
-console.log(removeDuplicates("boooonjrour 455522"))
