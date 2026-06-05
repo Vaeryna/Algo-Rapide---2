@@ -17,5 +17,3 @@ export function upperLowerCase(value: string): string {
 
     return newString
 }
-
-console.log(upperLowerCase("jesuisunchat"))
