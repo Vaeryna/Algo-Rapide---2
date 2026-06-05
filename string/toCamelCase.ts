@@ -1,11 +1,8 @@
-/*
-Écrivez une fonction qui convertit une chaîne en "camelCase"
-Cas d'usage: Dans un système de migration de base de données, où les conventions de nommage diffèrent entre l'ancien et le nouveau système. Par exemple, lors de la conversion de noms de colonnes SQL (avec underscores) vers des propriétés JavaScript.
-    const sqlColumnName = "user_first_name";
-const javascriptProperty = toCamelCase(sqlColumnName);
-// Transformation pour l'intégration dans le code : "userFirstName"
-*/
-
+/**
+ * Fonction qui convertit une chaine en camelCase
+ * @param value chaine à convertir
+ * la fonction renvoie une erreur si la chaine n'est pas un string
+ */
 
 export function toCamelCase(value: string): string {
 
@@ -20,11 +17,6 @@ export function toCamelCase(value: string): string {
             } else
                 newValue += (value[i])?.toLowerCase();
         }
-
     }
     return newValue.replace(/[^a-zA-Z0-9]/g, "")
-
 }
-
-
-console.log(toCamelCase("user_first name"));
