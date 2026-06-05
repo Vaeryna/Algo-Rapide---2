@@ -1,5 +1,5 @@
 import {describe, expect, it} from "vitest";
-import {UpperLetterName} from "../UpperLetterName.js"
+import {UpperLetterName} from "../upperLetterName.js"
 
 describe("returns string with salutation and name with first letter in upper case", () => {
     it("The name has space in the name", () => {
