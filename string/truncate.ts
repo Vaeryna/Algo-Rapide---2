@@ -18,5 +18,5 @@ export function truncate(input: string, size: number): string {
         else return result.trim() + "..."
     }
 
-    return result
+    return result.trim()
 }
